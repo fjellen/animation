@@ -1,0 +1,70 @@
+/* del 1*/
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    transition: 3s;
+}
+
+.box:hover {
+    background-color: navy;
+    transition: 3s;
+}
+
+/* del 2*/
+@keyframes pulse{
+    from{background-color:navy}
+    to{background-color: orange;}
+}
+
+.box-i {
+    height: 150px;
+    width: 150px;
+    background-color: navy;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* del 3*/
+input{
+    background-color: white;
+    transition: 1s;
+}
+
+input:nth-last-of-type(1):hover{
+    background-color: orange;
+    transition: 1s;
+}
+
+input:nth-last-of-type(2):hover{
+    background-color: navy;
+    transition: 1s;
+}
+
+/* del 4*/
+table{
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0;
+}
+
+tr{
+    background-color: white;
+    transition: 2s;
+}
+
+th, td{
+    padding: 8px;
+}
+
+tr:nth-last-of-type(1):hover{
+    background-color: orange;
+    transition: 2s;
+}
+
+tr:nth-last-of-type(2):hover{
+    background-color: navy;
+    transition: 2s;
+}
